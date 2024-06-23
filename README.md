@@ -13,7 +13,7 @@ A Node.js application using Express and JWT for authentication.
 
 ## Installation
 ```bash
-git clone https://github.com/pankajmadhikar/your-repo.git
+git clone https://github.com/pankajmadhikar/express-auth-jwt.git
 cd your-repo
 npm install
 
@@ -23,14 +23,14 @@ npm start
 
 ## Usage
 To use the API, follow these steps:
-1. Register a new user via `POST /api/auth/register`
-2. Login with registered user credentials via `POST /api/auth/login`
+1. Register a new user via `POST /api/user/register`
+2. Login with registered user credentials via `POST /api/user/login`
 3. Use the received JWT token to access protected routes
 
 
 ## API Endpoints
-- `POST /api/auth/register`: Register a new user.
-- `POST /api/auth/login`: Authenticate a user and get a token.
+- `POST /api/user/register`: Register a new user.
+- `POST /api/user/login`: Authenticate a user and get a token.
 - `GET /api/protected`: Access protected resource (requires JWT).
 
 
