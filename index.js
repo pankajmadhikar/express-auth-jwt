@@ -2,11 +2,15 @@ const express = require("express");
 const cors = require("cors");
 const morgan = require("morgan");
 const dotenv = require("dotenv");
+const connectDB = require("./config/db");
+const router = require("./routes/userRoute");
+const setuproutes = require("./routes");
 // dot env configuration
 dotenv.config();
 // dotenv.config({ path: "./" });
 
 // connect DB
+connectDB();
 
 // Rest Object
 const app = express();
