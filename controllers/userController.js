@@ -191,22 +191,12 @@ const resetUserPassword = async (req, res) => {
         const link = `http://127.0.0.1:3000/api/user/reset/${isUser._id}/${token}`;
         console.log("link", link);
 
-        // const transporter = nodemailer.createTransport({
-        //   host: "smtp.gmail.com",
-        //   port: 465,
-        //   secure: true, // Use `true` for port 465, `false` for all other ports
-        //   service: "Gmail",
-        //   auth: {
-        //     user: "pankajmadhikar308@gmail.com",
-        //     pass: "shivnareshpersonal09",
-        //   },
-        // });
 
         let transporter = nodemailer.createTransport({
           service: "gmail",
           auth: {
             user: "pankajmadhikar308@gmail.com",
-            pass: "enivrhquzyltwczt",
+            pass: "",
           },
         });
         // console.log("transporter", transporter);
